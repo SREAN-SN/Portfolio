@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SROUCH SREAN | Software Developer Portfolio</title>
+    <meta name="description" content="Personal portfolio of SROUCH SREAN, a Computer Science student and aspiring software developer specializing in modern web development and software engineering.">
+    <meta name="keywords" content="Srouch Srean, Software Developer, Web Developer, Computer Science Student, BELTEI, Portfolio">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="SROUCH SREAN | Software Developer">
+    <meta property="og:description" content="Computer Science student & aspiring software developer building modern digital solutions.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">SN</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="mobile-menu-btn" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text reveal slide-right">
+                <h3>Hello, I'm</h3>
+                <h1>SROUCH SREAN</h1>
+                <h2 class="subtitle">Computer Science Student & Aspiring Software Developer</h2>
+                <p>I am passionate about software development, web technologies, and building modern digital solutions. I enjoy learning new technologies and turning ideas into useful applications.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline" id="cv-btn">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a href="#contact" class="btn btn-text">Contact Me</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://t.me/" target="_blank" rel="noreferrer" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+            
+            <div class="hero-visual reveal slide-left">
+                <div class="image-wrapper">
+                    <img src="img/logo.jpg" alt="SROUCH SREAN" class="profile-img">
+                    <div class="floating-icons">
+                        <i class="fab fa-html5 icon html" style="--delay: 0s;"></i>
+                        <i class="fab fa-css3-alt icon css" style="--delay: 1s;"></i>
+                        <i class="fab fa-js icon js" style="--delay: 2s;"></i>
+                        <i class="fab fa-react icon react" style="--delay: 1.5s;"></i>
+                        <i class="fab fa-node-js icon node" style="--delay: 0.5s;"></i>
+                        <i class="fas fa-database icon sql" style="--delay: 2.5s;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title reveal slide-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-image reveal slide-right">
+                    <img src="img/logo.jpg" alt="SROUCH SREAN" class="profile-img">
+                </div>
+                <div class="about-text reveal slide-left">
+                    <p>I am a Web Developer student at <strong>BELTEI International University</strong> with a strong interest in software development and modern web technologies.</p>
+                    <p>I enjoy developing websites and applications, solving programming problems, learning new technologies, and working on practical projects.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <h3 class="counter" data-target="4">0</h3><span>+</span>
+                            <p>Years Learning</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="counter" data-target="10">0</h3><span>+</span>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="counter" data-target="10">0</h3><span>+</span>
+                            <p>Technologies</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="counter" data-target="100">0</h3><span>%</span>
+                            <p>Passion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title reveal slide-up">My Skills</h2>
+            <div class="skills-grid">
+                
+                <!-- Frontend -->
+                <div class="skill-category reveal slide-up">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>HTML5 / CSS3</span></div>
+                            <div class="progress-line" data-width="90%"><span></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>JavaScript / TypeScript</span></div>
+                            <div class="progress-line" data-width="85%"><span></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>React</span></div>
+                            <div class="progress-line" data-width="80%"><span></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Tailwind CSS</span></div>
+                            <div class="progress-line" data-width="85%"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category reveal slide-up" style="transition-delay: 0.1s;">
+                    <h3><i class="fas fa-server"></i> Backend & Database</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Node.js / Express</span></div>
+                            <div class="progress-line" data-width="75%"><span></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>MySQL / SQL Server</span></div>
+                            <div class="progress-line" data-width="80%"><span></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>REST API</span></div>
+                            <div class="progress-line" data-width="85%"><span></span></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Firebase</span></div>
+                            <div class="progress-line" data-width="70%"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming & Tools -->
+                <div class="skill-category reveal slide-up" style="transition-delay: 0.2s;">
+                    <h3><i class="fas fa-tools"></i> Programming & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="tag">Dart</span>
+                        <span class="tag"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="tag"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag"><i class="fab fa-figma"></i> Figma</span>
+                        <span class="tag">Postman</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title reveal slide-up">My Projects</h2>
+            
+            <div class="project-filters reveal slide-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="react">React</button>
+                <button class="filter-btn" data-filter="js">JavaScript</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal scale-in" data-category="fullstack react">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&q=80" alt="University System">
+                    </div>
+                    <div class="project-content">
+                        <h3>University Student Info System</h3>
+                        <p>A web-based system for managing students, lecturers, courses, enrollments, grades, attendance, and reports.</p>
+                        <div class="tech-stack">
+                            <span>React</span><span>TypeScript</span><span>Node.js</span><span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal scale-in" data-category="fullstack react web">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&q=80" alt="Registration System">
+                    </div>
+                    <div class="project-content">
+                        <h3>Student Registration System</h3>
+                        <p>A modern university portal for course registration and attendance management.</p>
+                        <div class="tech-stack">
+                            <span>React</span><span>TypeScript</span><span>Tailwind</span><span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal scale-in" data-category="web js fullstack">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&q=80" alt="E-Commerce">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A modern online shopping platform with product management, shopping cart, checkout, and order management.</p>
+                        <div class="tech-stack">
+                            <span>HTML/CSS</span><span>JS</span><span>Node.js</span><span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal scale-in" data-category="web js">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=500&q=80" alt="E-Learning">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Learning Platform</h3>
+                        <p>An online learning platform where students can discover courses, lessons, assignments, and learning resources.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Experience -->
+    <section id="education" class="section bg-alt">
+        <div class="container">
+            <div class="timeline-container">
+                
+                <div class="timeline-wrapper">
+                    <h2 class="section-title reveal slide-up">Education</h2>
+                    <div class="timeline">
+                        <div class="timeline-item reveal slide-right">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Bachelor of Computer Science</h4>
+                                <h5>BELTEI International University</h5>
+                                <span class="timeline-date">In Progress</span>
+                                <p>Relevant Subjects:</p>
+                                <div class="tech-stack" style="margin-top: 10px;">
+                                    <span>Programming</span><span>Database</span><span>Web Dev</span><span>Software Eng.</span><span>Mobile Dev</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-wrapper" id="experience">
+                    <h2 class="section-title reveal slide-up">Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item reveal slide-left">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Student Developer</h4>
+                                <h5>Software Development Projects</h5>
+                                <span class="timeline-date">2024 – Present</span>
+                                <ul>
+                                    <li>Developed responsive websites & UI layouts</li>
+                                    <li>Built university management systems</li>
+                                    <li>Worked with relational databases (MySQL, SQL Server)</li>
+                                    <li>Practiced Git and GitHub for version control</li>
+                                    <li>Created multiple full-stack academic projects</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title reveal slide-up">My Services</h2>
+            <div class="services-grid">
+                
+                <div class="service-card reveal scale-in">
+                    <div class="service-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Build modern responsive websites and interactive web applications tailored to your needs.</p>
+                </div>
+
+                <div class="service-card reveal scale-in" style="transition-delay: 0.1s;">
+                    <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Frontend Development</h3>
+                    <p>Create fast, accessible, and highly responsive user interfaces using modern technologies.</p>
+                </div>
+
+                <div class="service-card reveal scale-in" style="transition-delay: 0.2s;">
+                    <div class="service-icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend Development</h3>
+                    <p>Develop robust REST APIs and secure server-side applications to power your platforms.</p>
+                </div>
+
+                <div class="service-card reveal scale-in">
+                    <div class="service-icon"><i class="fas fa-database"></i></div>
+                    <h3>Database Development</h3>
+                    <p>Design, implement and manage efficient relational and NoSQL databases.</p>
+                </div>
+
+                <div class="service-card reveal scale-in" style="transition-delay: 0.1s;">
+                    <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p>Create clean, modern, and user-friendly interfaces focusing on excellent user experience.</p>
+                </div>
+
+                <div class="service-card reveal scale-in" style="transition-delay: 0.2s;">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3>Software Development</h3>
+                    <p>Build practical, scalable software solutions for complex real-world problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title reveal slide-up">Contact Me</h2>
+            <div class="contact-container">
+                
+                <div class="contact-info reveal slide-right">
+                    <h3>Let's Work Together</h3>
+                    <p>Have a project idea, internship opportunity, or collaboration proposal? Feel free to contact me.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                            <div class="text">
+                                <h4>Email</h4>
+                                <a href="mailto:srouchsrean@example.com">srouchsrean@example.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="text">
+                                <h4>Phone</h4>
+                                <span>+855 12 345 678</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="text">
+                                <h4>Location</h4>
+                                <span>Cambodia</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon"><i class="fab fa-telegram-plane"></i></div>
+                            <div class="text">
+                                <h4>Telegram</h4>
+                                <a href="#">@srouchsrean</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper reveal slide-left">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>SROUCH SREAN</h2>
+                    <p>Building digital experiences with passion, creativity, and technology.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https://t.me/" target="_blank" rel="noreferrer"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SROUCH SREAN. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Utilities -->
+    <div id="toast" class="toast"><i class="fas fa-check-circle"></i> Message sent successfully!</div>
+    <button id="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="index.js"></script>
+</body>
+</html>
